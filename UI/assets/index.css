@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  height: 100vh; }
+  body .main-container {
+    background-color: #272F3F;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .main-container .sub-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 300px;
+      margin-right: 300px;
+      border-radius: 20px; }
+      body .main-container .sub-container .pic {
+        background-image: url("./pic/avatar.jpg");
+        background-size: cover;
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+        margin: 50px 250px 50px; }
+      body .main-container .sub-container .login-container {
+        box-shadow: -15px 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #646D80;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+        margin: 0 200px 50px;
+        border-radius: 20px; }
+        body .main-container .sub-container .login-container p {
+          margin-top: 50px;
+          color: #ffffff;
+          font-size: 20px; }
+        body .main-container .sub-container .login-container .input0 {
+          margin: 70px 150px 0;
+          border: none;
+          padding: 1rem 2rem;
+          width: 300px;
+          border-radius: 10px;
+          box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); }
+        body .main-container .sub-container .login-container .input1 {
+          margin-top: 50px;
+          border: none;
+          padding: 1rem 2rem;
+          width: 300px;
+          border-radius: 10px;
+          box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); }
+        body .main-container .sub-container .login-container .input2 {
+          margin-top: 50px;
+          border: none;
+          padding: 1rem 2rem;
+          text-decoration: none;
+          background: #545C6d;
+          color: #ffffff;
+          cursor: pointer;
+          text-align: center;
+          transition: background 250ms ease-in-out, transform 150ms ease;
+          width: 300px;
+          margin-bottom: 50px;
+          border-radius: 10px;
+          box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); }
+          body .main-container .sub-container .login-container .input2:hover {
+            background-color: #464C57;
+            color: #A2A6AF; }
+          body .main-container .sub-container .login-container .input2:active {
+            background-color: #464C57;
+            color: #A2A6AF; }
