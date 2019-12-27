@@ -81,7 +81,9 @@ body {
       flex-direction: column;
       span {
         margin: 10px auto 0;
-        color: #FFFFFF;
+        color: #A6ACAF;
+        font-size: 30px;
+        font-weight: bold;
       }
       .input0-form {
         margin: 70px auto 0;
@@ -154,6 +156,8 @@ body {
       align-items: center;
       justify-content: center;
       color: #ffffff;
+      margin-bottom: 15px;
+      box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
       cursor: default;
 
       &:hover {
