@@ -79,3 +79,115 @@ body {
             color: #A2A6AF; }
           body .main-container .sub-container .login-container .input2:focus {
             outline: none; }
+
+body {
+  background-color: #272F3F; }
+  body .menu-header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    body .menu-header .menu-item {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 40px; }
+    body .menu-header .i0 {
+      background: url("./pic/rocket.png");
+      background-size: cover; }
+      body .menu-header .i0:hover {
+        opacity: .5; }
+      body .menu-header .i0:active {
+        opacity: .2;
+        width: 160px;
+        height: 155px; }
+    body .menu-header .i1 {
+      background: url("./pic/gitlab.png");
+      background-size: cover; }
+      body .menu-header .i1:hover {
+        opacity: .5; }
+      body .menu-header .i1:active {
+        opacity: .2;
+        width: 160px;
+        height: 155px; }
+    body .menu-header .i2 {
+      background: url("./pic/kerio.png");
+      background-size: cover; }
+      body .menu-header .i2:hover {
+        opacity: .5; }
+      body .menu-header .i2:active {
+        opacity: .2;
+        width: 160px;
+        height: 155px; }
+  body .form-container {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    body .form-container .form {
+      width: 700px;
+      height: 400px;
+      background-color: #646D80;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column; }
+      body .form-container .form .input0-form {
+        margin: 70px auto 0;
+        border: none;
+        padding: 1rem 2rem;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); }
+        body .form-container .form .input0-form:focus {
+          outline: none; }
+      body .form-container .form .input1-form {
+        margin: 50px auto 0;
+        border: none;
+        padding: 1rem 2rem;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); }
+        body .form-container .form .input1-form:focus {
+          outline: none; }
+      body .form-container .form .input2-form {
+        margin: 50px auto 0;
+        border: none;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        background: #545C6d;
+        color: #ffffff;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, transform 150ms ease;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); }
+        body .form-container .form .input2-form:hover {
+          background-color: #464C57;
+          color: #A2A6AF; }
+        body .form-container .form .input2-form:active {
+          background-color: #D1D5DE;
+          color: #A2A6AF; }
+        body .form-container .form .input2-form:focus {
+          outline: none; }
+      body .form-container .form p {
+        margin: 10px auto 50px;
+        color: #ffffff; }
+    body .form-container .add-admin {
+      width: 700px;
+      height: 50px;
+      background-color: #454562;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      cursor: default; }
+      body .form-container .add-admin:hover {
+        opacity: .5; }
+      body .form-container .add-admin:active {
+        opacity: .2; }

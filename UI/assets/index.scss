@@ -1,0 +1,146 @@
+@import './base.scss';
+body {
+    background-color: $background;
+    .menu-header {
+        box-sizing: border-box;
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .menu-item {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 40px;
+        }
+        .i0 {
+            background: url('./pic/rocket.png');
+            background-size: cover;
+           &:hover {
+               opacity: .5;
+           }
+
+           &:active {
+               opacity: .2;
+               width: 160px;
+               height: 155px;
+           }
+        }
+        .i1 {
+            background: url('./pic/gitlab.png');
+            background-size: cover;
+            &:hover {
+                opacity: .5;
+            }
+
+            &:active {
+                opacity: .2;
+                width: 160px;
+                height: 155px;
+            }
+        }
+        .i2 {
+            background: url('./pic/kerio.png');
+            background-size: cover;
+            &:hover {
+                opacity: .5;
+            }
+
+            &:active {
+                opacity: .2;
+                width: 160px;
+                height: 155px;
+            }
+        }
+    }
+    .form-container {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .form {
+            width: 700px;
+            height: 400px;
+            background-color: $form;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            .input0-form {
+                margin: 70px auto 0;
+                border: none;
+                padding: 1rem 2rem;
+                width: 300px;
+                border-radius: 10px;
+                box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+                &:focus {
+                    outline: none;
+                }
+            }
+            .input1-form {
+                margin: 50px auto 0;
+                border: none;
+                padding: 1rem 2rem;
+                width: 300px;
+                border-radius: 10px;
+                box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+
+                &:focus {
+                    outline: none;
+                }
+            }
+            .input2-form {
+                margin: 50px auto 0;
+                border: none;
+                padding: 1rem 2rem;
+                text-decoration: none;
+                background: $login-form-button;
+                color: #ffffff;
+                cursor: pointer;
+                text-align: center;
+                transition: background 250ms ease-in-out,
+                    transform 150ms ease;
+                width: 300px;
+                border-radius: 10px;
+                box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+
+                &:hover {
+                    background-color: #464C57;
+                    color: #A2A6AF;
+                }
+
+                &:active {
+                    background-color: #D1D5DE;
+                    color: #A2A6AF;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+            p {
+                margin: 10px auto 50px;
+                color: #ffffff;
+            }
+        }
+        .add-admin {
+            width: 700px;
+            height: 50px;
+            background-color: #454562;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            cursor: default;
+            &:hover {
+                opacity: .5;
+            }
+            &:active {
+                opacity: .2;
+            }
+        }
+    }
+}
