@@ -1,0 +1,112 @@
+@import './base.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  height: 100vh;
+
+  .main-container {
+    background-color: $background;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sub-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 300px;
+      margin-right: 300px;
+      border-radius: 20px;
+
+      .pic {
+        background-image: url('./resources/pics/avatar.jpg');
+        background-size: cover;
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+        margin: 50px 250px 50px;
+      }
+
+      .login-container {
+        box-shadow: -15px 0 10px rgba(0, 0, 0, 0.1);
+        background-color: $form;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 700px;
+        margin: 0 200px 50px;
+        border-radius: 20px;
+
+        p {
+          margin-top: 50px;
+          color: #ffffff;
+          font-size: 20px;
+        }
+
+        .input0 {
+          margin: 70px 150px 0;
+          border: none;
+          padding: 1rem 2rem;
+          width: 300px;
+          border-radius: 10px;
+          box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .input1 {
+          margin-top: 50px;
+          border: none;
+          padding: 1rem 2rem;
+          width: 300px;
+          border-radius: 10px;
+          box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .input2 {
+          margin-top: 50px;
+          border: none;
+          padding: 1rem 2rem;
+          text-decoration: none;
+          background: $login-form-button;
+          color: #ffffff;
+          cursor: pointer;
+          text-align: center;
+          transition: background 250ms ease-in-out,
+            transform 150ms ease;
+          width: 300px;
+          margin-bottom: 50px;
+          border-radius: 10px;
+          box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+
+          &:hover {
+            background-color: #464C57;
+            color: #A2A6AF;
+          }
+
+          &:active {
+            background-color: #D1D5DE;
+            color: #A2A6AF;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+      }
+    }
+  }
+}

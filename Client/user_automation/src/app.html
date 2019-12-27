@@ -1,13 +1,19 @@
 <template>
-  <require from="bootstrap/dist/css/bootstrap.min.css"></require>
-  <require from="font-awesome/css/font-awesome.min.css"></require>
   <require from="./styles.scss"></require>
-
-  <require from="./nav-bar.html"></require>
-
-  <nav-bar router.bind="router"></nav-bar>
-
-  <div class="page-host">
-    <router-view></router-view>
+  <require from="./component/menu-header/menu-header"></require>
+  <require from="./component/git-form/git-form"></require>
+  <require from="./component/rocket-form/rocket-form"></require>
+  <require from="./component/kerio-form/kerio-form"></require>
+  <require from="./component/admin-form/admin-form"></require>
+  <menu-header gitlab-form.bind="gitlabForm" rocket-form.bind="rocketForm" kerio-form.bind="kerioForm" admin-form.bind="adminForm">
+  </menu-header>
+  <div class="form-container">
+    <div class="add-admin" click.delegate="showAdminForm()">
+      <p>+ Add new admin</p>
+    </div>
+    <git-form show.bind="gitlabForm"></git-form>
+    <rocket-form show.bind="rocketForm"></rocket-form>
+    <kerio-form show.bind="kerioForm"></kerio-form>
+    <admin-form show.bind="adminForm"></admin-form>
   </div>
 </template>
